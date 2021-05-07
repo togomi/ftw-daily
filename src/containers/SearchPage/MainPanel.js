@@ -217,7 +217,7 @@ class MainPanel extends Component {
         <SortBy
           {...mobileClassesMaybe}
           sort={urlQueryParams[sortConfig.queryParamName]}
-          isConflictingFilterActive={!!conflictingFilterActive}
+          isConflictingFilterActive={false}
           onSelect={this.handleSortBy}
           showAsPopup
           contentPlacementOffset={FILTER_DROPDOWN_OFFSET}

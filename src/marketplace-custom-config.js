@@ -158,7 +158,7 @@ export const sortConfig = {
 
   // Keyword filter is sorting the results already by relevance.
   // If keyword filter is active, we need to disable sorting.
-  conflictingFilters: ['keyword'],
+  conflictingFilters: [],//['keyword'],
 
   options: [
     { key: 'createdAt', label: 'Newest' },
