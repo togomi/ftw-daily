@@ -1,8 +1,8 @@
 {
-  "name": "Sharetribe Flex Template Demo",
-  "description": "Sharetribe Flex Template Demo - Saunatime!",
+  "name": "Storganize",
+  "description": "Marketplace for self storage spaces - Storganize!",
   "keywords": ["node", "react"],
-  "repository": "https://github.com/sharetribe/ftw-daily/",
+  "repository": "https://github.com/togomi/ftw-daily/",
   "env": {
     "REACT_APP_MAPBOX_ACCESS_TOKEN": {
       "description": "See: Integrating to map providers documentation https://github.com/sharetribe/ftw-daily/blob/master/docs/map-providers.md"

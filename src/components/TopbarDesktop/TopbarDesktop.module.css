@@ -38,14 +38,18 @@
 
 .logo {
   /* If height is increased, change link paddings accordingly */
-  height: 27px;
+  /* height: 27px; */
 
   /* Good aspect ratio should be less than 160/27 (width/height) */
   /* NOTE: extremely wide logos, need special handling. */
-  width: auto;
+  /* width: auto; */
   max-width: 220px;
   object-fit: contain;
   object-position: left center;
+
+  height: 50px;
+  width: 180px;
+  margin-top: -10px;
 }
 
 /* Search */

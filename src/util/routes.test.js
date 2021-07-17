@@ -31,8 +31,8 @@ describe('util/routes.js', () => {
         '/s?page=2'
       );
       expect(
-        createResourceLocatorString('SearchPage', routes, {}, { address: 'Helsinki', page: 2 })
-      ).toEqual('/s?address=Helsinki&page=2');
+        createResourceLocatorString('SearchPage', routes, {}, { address: 'Toronto', page: 2 })
+      ).toEqual('/s?address=Toronto&page=2');
     });
 
     it('should return meaningful strings with path and search parameters', () => {
