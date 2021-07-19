@@ -9,32 +9,30 @@
     <style>
 
      /**
-      * Poppins font is downloaded from Google Fonts
+      * Raleway font is downloaded from Google Fonts
       * but served from sharetribe.com assets.
       *
-      * https://fonts.google.com/specimen/Poppins
+      * https://fonts.google.com/specimen/Raleway#standard-styles
       */
-
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf') format('truetype');
+        font-family: 'Raleway';
+        src: url('%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-Medium.ttf') format('truetype');
         font-weight: 500; /* Medium */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+        font-family: 'Raleway';
+        src: url('%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype');
         font-weight: 600; /* SemiBold */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf') format('truetype');
+        font-family: 'Raleway';
+        src: url('%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
         font-weight: 700; /* Bold */
         font-style: normal;
-      }
 
       body {
         font-family: Helvetica, Arial, sans-serif;
@@ -122,7 +120,7 @@
       }
 
       .fontsLoaded body {
-        font-family: poppins, Helvetica, Arial, sans-serif;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         opacity: 1;
       }
 
@@ -195,11 +193,11 @@
             return;
           }
 
-          var poppinsMedium = new FontFace('poppins', 'url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf") format("truetype")', { style: 'normal', weight: '500' });
-          var poppinsSemibold = new FontFace('poppins', 'url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf") format("truetype")', { style: 'normal', weight: '600' });
-          var poppinsBold = new FontFace('poppins', 'url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf") format("truetype")', { style: 'normal', weight: '700' });
+          var ralewayMedium = new FontFace('Raleway', "url('%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-Medium.ttf') format('truetype')", { style: 'normal', weight: '500' });
+          var ralewaySemibold = new FontFace('Raleway', "url('%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype')", { style: 'normal', weight: '600' });
+          var ralewayBold = new FontFace('Raleway', "url('%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype')", { style: 'normal', weight: '700' });
 
-          Promise.all([poppinsMedium.load(), poppinsSemibold.load(), poppinsBold.load()])
+          Promise.all([ralewayMedium.load(), ralewaySemibold.load(), ralewayBold.load()])
             .then(function(values) {
               values.forEach(function(f) {
                 document.fonts.add(f);

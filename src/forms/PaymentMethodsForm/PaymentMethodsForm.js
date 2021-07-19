@@ -52,17 +52,17 @@ const stripeErrorTranslation = (intl, stripeError) => {
 const stripeElementsOptions = {
   fonts: [
     {
-      family: 'poppins',
+      family: 'Raleway',
       fontSmoothing: 'antialiased',
       src:
-        'local("poppins"), local("Poppins"), url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf") format("truetype")',
+        'local("Raleway"), local("Raleway"), url("%PUBLIC_URL%/static/fonts/Raleway/static/Raleway-Bold.ttf") format("truetype")',
     },
   ],
 };
 
 const cardStyles = {
   base: {
-    fontFamily: '"poppins", Helvetica, Arial, sans-serif',
+    fontFamily: '"Raleway", Helvetica, Arial, sans-serif',
     fontSize: '18px',
     fontSmoothing: 'antialiased',
     lineHeight: '24px',
